@@ -21,11 +21,16 @@ public class UserRegistrationUsingLambdaTest {
         Assertions.assertTrue(value);
         System.out.println("Last Name Checked :- Successfully Passed UC2");
     }
-
     @Test
     void GivenEmailShouldReturnTrue(){
         boolean Email= userRegistration.validateEmail("Prajwal23@gmail.com");
         Assertions.assertTrue(Email);
         System.out.println("Email Checked");
     }
+@Test
+    void GivenPhoneNUmberShouldReturnTrue(){
+        boolean phonenumber= userRegistration.validatePhoneNumber("919881640062");
+        Assertions.assertTrue(phonenumber);
+    System.out.println("Phonenumber Checked");
+}
 }
