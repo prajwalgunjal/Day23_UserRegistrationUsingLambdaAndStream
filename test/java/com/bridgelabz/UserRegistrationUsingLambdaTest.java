@@ -15,5 +15,11 @@ public class UserRegistrationUsingLambdaTest {
         Assertions.assertTrue(value);
         System.out.println("First Name Checked:- Successfully passed UC1");
     }
+    @Test
+    void givenLastnameshouldreturnTrue(){
+        boolean value = userRegistration.validateLastName("Gunjal");
+        Assertions.assertTrue(value);
+        System.out.println("Last Name Checked :- Successfully Passed UC2");
+    }
 
 }

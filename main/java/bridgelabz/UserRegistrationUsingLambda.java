@@ -12,4 +12,12 @@ public class UserRegistrationUsingLambda {
             return false;
         }
     }
+    public boolean validateLastName(String LastName){
+        Pattern pattern = Pattern.compile("^[A-Z][a-z]{3,}$");
+        Matcher matcher = pattern.matcher(LastName);
+        if(matcher.matches())
+            return true;
+        else
+            return false;
+    }
 }
