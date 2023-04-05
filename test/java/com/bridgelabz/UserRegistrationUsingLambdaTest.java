@@ -37,6 +37,6 @@ public class UserRegistrationUsingLambdaTest {
     void GivenPasswordShouldWrittenTrue(){
         boolean password = userRegistration.ValidatePassword("Prajwall");
         Assertions.assertTrue(password);
-        System.out.println("Password Checked (Rule 1 And 2 Checked)");
+        System.out.println("Password Checked (Rule 1 And 2 and 3 Checked)");
     }
 }
