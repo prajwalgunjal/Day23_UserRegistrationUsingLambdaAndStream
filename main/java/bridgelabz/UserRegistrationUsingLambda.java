@@ -36,4 +36,12 @@ public class UserRegistrationUsingLambda {
         else
             return false;
     }
+    public boolean ValidatePassword(String password){
+        Pattern pattern = Pattern.compile("^[A-Za-z]{8,}$");
+        Matcher matcher = pattern.matcher(password);
+        if(matcher.matches())
+            return true;
+        else
+            return false;
+    }
 }
