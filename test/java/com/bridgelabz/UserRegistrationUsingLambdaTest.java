@@ -31,12 +31,12 @@ public class UserRegistrationUsingLambdaTest {
     void GivenPhoneNUmberShouldReturnTrue(){
         boolean phonenumber= userRegistration.validatePhoneNumber("919881640062");
         Assertions.assertTrue(phonenumber);
-    System.out.println("Phonenumber Checked");
+        System.out.println("Phonenumber Checked");
 }
 @Test
     void GivenPasswordShouldWrittenTrue(){
         boolean password = userRegistration.ValidatePassword("Prajwall");
         Assertions.assertTrue(password);
-    System.out.println("Password Checked");
+        System.out.println("Password Checked (Rule 1 And 2 Checked)");
     }
 }
