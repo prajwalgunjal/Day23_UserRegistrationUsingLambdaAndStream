@@ -39,8 +39,9 @@ public class UserRegistrationUsingLambda {
     public boolean ValidatePassword(String password){
         Pattern pattern = Pattern.compile("\"^(?=.*[A-Z])(?=.*\\\\d)(?=.*[!@#$%^&*()_+])[A-Za-z\\\\d!@#$%^&*()_+]{8,}$\"");
         Matcher matcher = pattern.matcher(password);
-        if(matcher.matches())
+        if(matcher.matches()){
             return true;
+        }
         else
             return false;
     }
