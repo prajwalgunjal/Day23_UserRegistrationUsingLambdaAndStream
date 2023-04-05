@@ -20,4 +20,12 @@ public class UserRegistrationUsingLambda {
         else
             return false;
     }
+    public boolean validateEmail(String Email){
+        Pattern pattern = Pattern.compile("^[0-9a-zA-Z]+([+.-]([a-z0-9A-Z]+))*[@][a-zA-Z0-9]+[.][a-z]{2,4}[,]?([.][a-z]{2,4})?$");
+        Matcher matcher = pattern.matcher(Email);
+        if(matcher.matches())
+            return true;
+        else
+            return false;
+    }
 }

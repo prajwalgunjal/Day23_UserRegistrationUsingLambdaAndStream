@@ -22,4 +22,10 @@ public class UserRegistrationUsingLambdaTest {
         System.out.println("Last Name Checked :- Successfully Passed UC2");
     }
 
+    @Test
+    void GivenEmailShouldReturnTrue(){
+        boolean Email= userRegistration.validateEmail("Prajwal23@gmail.com");
+        Assertions.assertTrue(Email);
+        System.out.println("Email Checked");
+    }
 }
